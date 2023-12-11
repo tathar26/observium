@@ -7,8 +7,8 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # update & upgrade & install base
 RUN apt-get update && apt-get -y dist-upgrade && \
-    apt-get -y install libapache2-mod-php php-cli php-mysql php-mysqli php-gd php-json php-curl\
-    php-pear php-apcu php-ldap snmp fping mysql-client python3-mysqldb rrdtool subversion whois mtr-tiny \
+    apt install libapache2-mod-php8.1 php8.1-cli php8.1-mysql php8.1-gd php8.1-bcmath php8.1-mbstring \
+    php8.1-opcache php8.1-curl php-apcu php-pear snmp fping mysql-client python3-mysqldb rrdtool subversion whois mtr-tiny \
     ipmitool graphviz imagemagick apache2 python3-pymysql python-is-python3 \
     libvirt-clients wget supervisor cron unzip && \
     apt-get clean autoclean && apt-get autoremove -y && \
