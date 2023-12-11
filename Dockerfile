@@ -7,11 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # update & upgrade & install base
 RUN apt-get update && apt-get -y dist-upgrade && \
-<<<<<<< HEAD
     apt install libapache2-mod-php8.1 php8.1-cli php8.1-mysql php8.1-gd php8.1-bcmath php8.1-mbstring \
-=======
-    apt install libapache2-mod-php8.1 php8.1-cli php8.1-mysql php8.1-gd php8.1-bcmath php8.1-mbstring\
->>>>>>> 28e1afd0b9edbd7dad44eeff16764aaee74655dd
     php8.1-opcache php8.1-curl php-apcu php-pear snmp fping mysql-client python3-mysqldb rrdtool subversion whois mtr-tiny \
     ipmitool graphviz imagemagick apache2 python3-pymysql python-is-python3 \
     libvirt-clients wget supervisor cron unzip && \
